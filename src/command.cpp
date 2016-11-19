@@ -47,10 +47,7 @@ bool Execute::execute(vector<string>cmds) {
 bool Execute::execTest(vector<string>cmds){
 	struct stat file;
 	bool hasFlag;
-	for(unsigned i = 0; i < cmds.size(); i++) {
-		cout << "<" << cmds.at(i) << ">";
-	}
-	cout << endl;
+	
 	if( cmds.at(1) != "-e" && cmds.at(1) != "-f" && cmds.at(1) != "-d"){
 			hasFlag = false;
 	}
@@ -61,14 +58,14 @@ bool Execute::execTest(vector<string>cmds){
 	
 	
 	if( cmds.at(1) == "-e" || !hasFlag ){ //does test -e or test with no specifications
-		// cout << "-e or none" << endl;
+		
 		if( hasFlag && stat(cmds.at(2).c_str(), &file) == 0){
-			// cout << "-e" << endl;
+			
 			cout << "(True)" << endl;
 			return true;
 		}
 		else if (!hasFlag && stat(cmds.at(1).c_str(), &file) == 0){
-			// cout << "none" << endl;
+			
 			cout << "(True)" << endl;
 			return true;
 		}
