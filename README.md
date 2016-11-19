@@ -8,7 +8,7 @@ For this code, we made a shell that would be able to use the simple commands of 
 ## Bugs
 
 Initially we had an issues with white space, empty vectors, and trying to do more than 2 commands at the time. We resolved these issues 
-for the most part.
+for the most part. Also a few errors with testing files as well.
 
 ## Installation
 
