@@ -13,9 +13,7 @@ using namespace std;
 
 int main(){
     string user_input = "";
-    // bool execStatus = true;
     bool allSpace = true;
-    // vector<string> argsList;
     
     
     while (user_input != "exit") {
@@ -32,7 +30,6 @@ int main(){
         }
         //test for only white spaces
         else {
-            // argsList.clear();
             for(unsigned i = 0; i < user_input.size(); i++) {
                 if(user_input.at(i) != ' ') {
                     allSpace = false;
@@ -42,7 +39,6 @@ int main(){
             //the actual shell
             if(!allSpace) { 
                 p.sepParenthesis(user_input);
-                // e.exec(argsList, execStatus);
             }
             else{
                 break;
