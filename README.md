@@ -3,12 +3,11 @@
 
 ## Synopsis
 
-For this code, we made a shell that would be able to use the simple commands of ls, echo, and mkdir with the combination of the comparators of &&, ||, and ;.
+As of now, this shell should be fully functional and is able to do the commands ranging from echo, ls, mkdir, and cd. As well as this, it is able to use connectors such as && and || to make the shell do multiple commands at once.
 
 ## Bugs
 
-Initially we had an issues with white space, empty vectors, and trying to do more than 2 commands at the time. We resolved these issues 
-for the most part. Also a few errors with testing files as well.
+For bugs, we had a bug (in one which we fixed) in that it would try to access memory that was not properly allocated when trying to change directories from workspace to whatever folders are in a repository.
 
 ## Installation
 
@@ -16,7 +15,7 @@ $ git clone https://github.com/pnguy046/rshell.git
 
 $ cd rshell
 
-$ git checkout hw3
+$ git checkout hw4
 
 $ make
 
